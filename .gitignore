@@ -1,0 +1,66 @@
+# Dataset -- never commit, per Stanford AIMI's Research Use Agreement
+/data/
+
+# Checkpoints -- large binary files, don't belong in git history
+checkpoints/
+
+# Results -- plots/JSONs are small and fine to keep for now, but large
+# example-image folders can be excluded if you prefer a lighter repo.
+# Uncomment if you want to exclude:
+# results/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Weights & Biases local run logs
+wandb/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+/docs/compare_combined_before_review.py
+*.npz
+/results/gradcam/examples/
+/results_ordinal_readout/ordinal_seed101_val/predictions.csv
+/results_ordinal_readout/ordinal_seed202_val/predictions.csv
+/results_ordinal_readout/ordinal_seed303_val/predictions.csv
+video_ids.txt
+/results/test_eval/
+/results/test_eval_balanced/
+
+# Local research data and generated outputs. Reviewed graphs are force-added by exact path.
+/data/
+/checkpoints/
+/results*/
+/runs/
+/wandb/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npz
+*.npy
+*.avi
+*.mp4
+*.dcm
+*.zip
+*.bak
+*.tmp
+.env
+.env.*
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Allow demo screen recording inside Demo/
+!Demo/
+!Demo/*.mp4
+!Demo/*.mov
